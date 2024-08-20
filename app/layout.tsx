@@ -21,7 +21,7 @@ export default function Layout({ children }:any) {
     <html lang="en">
       <head>
         <link rel="icon" href="/logo.png" />
-        //name of the pages
+
         <title>Orderz Food order </title>
         </head>
       <body 
