@@ -96,7 +96,7 @@ export function DashComp() {
   }
   ]) */
 
-  const [orders, setOrders] = useState(null)
+  const [orders, setOrders] :any= useState(null)
   useEffect(() => {
     const fetchOrders = async () => {
       try {
@@ -141,13 +141,13 @@ export function DashComp() {
         order.status.toLowerCase().includes(searchTerm.toLowerCase()),
     )
   }, [orders, searchTerm]) */
-  const handleOrderStatusUpdate = (orderId, newStatus) => {
-    setOrders((prevOrders) =>
-      prevOrders.map((order) => (order.id === orderId ? { ...order, status: newStatus } : order)),
+  const handleOrderStatusUpdate = (orderId:any, newStatus:any) => {
+    setOrders((prevOrders:any) =>
+      prevOrders.map((order:any) => (order.id === orderId ? { ...order, status: newStatus } : order)),
     )
   }
-  const handleInventoryUpdate = (burger, newQuantity) => {
-    setInventory((prevInventory) => ({
+  const handleInventoryUpdate = (burger:any, newQuantity:any) => {
+    setInventory((prevInventory:any) => ({
       ...prevInventory,
       [burger]: { ...prevInventory[burger], current: newQuantity },
     }))
@@ -172,7 +172,7 @@ export function DashComp() {
 
   }
 
-    const handleFeatureUpdate = (feature, newMin, newMax, newMandatory) => {
+    const handleFeatureUpdate = (feature:any, newMin:any, newMax:any, newMandatory:any) => {
     setFeatures((prevFeatures) =>
       prevFeatures.map((f) => (f.name === feature ? { ...f, min: newMin, max: newMax, mandatory: newMandatory } : f)),
     )
@@ -200,7 +200,7 @@ export function DashComp() {
     </div> */}
   </div>
   <div className="grid gap-4">
-    {orders.map((order) => (
+    {orders.map((order:any) => (
       <Card
         key={order.user_name}
         onClick={() => setSelectedOrder(order)}
@@ -229,7 +229,7 @@ export function DashComp() {
           </div> 
 
           <div className="flex items-center justify-between"> 
-          <div className="text-muted-foreground text-sm">{order.features.map((feature):any => {
+          <div className="text-muted-foreground text-sm">{order.features.map((feature:any):any => {
            
            
            return (<> <div className="flex"> 
@@ -259,7 +259,7 @@ Done 1
   )
 }
 
-function ExpandIcon(props) {
+function ExpandIcon(props:any) {
   return (
     <svg
       {...props}
