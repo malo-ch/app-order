@@ -1,0 +1,67 @@
+[
+    {
+        
+        "name": "Burger",
+        "user_name": "Malo",
+        "q_max": 10,
+        "q_min": 1,
+        "current_quantity": 3,
+        "commentaries": "This is a commentary",
+        "features": [
+            {
+                "name": "Steak",
+                "type": "amount",
+                "q_min": 1,
+                "q_max": 2,
+                "mandatory": true,
+                "current_value": 1
+            },
+            {
+                "name": "Cheese",
+                "type": "list",
+                "values": [
+                    "Cheddar",
+                    "Mozzarella",
+                    "Gouda"
+                ],
+                "mandatory": false,
+                "onlyone": true,
+                "current_value": [
+                    "Cheddar"
+                ]
+            },
+            {
+                "name": "Toppings",
+                "type": "list",
+                "values": [
+                    "Lettuce",
+                    "Tomato",
+                    "Onion",
+                    "Pickles",
+                    "Jalapenos"
+                ],
+                "mandatory": false,
+                "onlyone": false,
+                "current_value": [
+                    "Tomato",
+                    "Onion"
+                ]
+            },
+            {
+                "name": "Sauces",
+                "type": "list",
+                "values": [
+                    "Ketchup",
+                    "Mustard",
+                    "Mayo",
+                    "BBQ"
+                ],
+                "mandatory": false,
+                "onlyone": false,
+                "current_value": [
+                    "Mayo"
+                ]
+            }
+        ]
+    }
+]
