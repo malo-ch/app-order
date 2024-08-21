@@ -21,9 +21,9 @@ const product =  {
             
         },
             {
-                "name":"Cheese",
+                "name":"Fromage",
                 "type":"list",
-                "values":["Cheddar","Mozzarella","Gouda"],
+                "values":["Cheddar","Toastinette","Mimolette"],
                 "mandatory":false,
                 "onlyone":true,
                 "current_value":[]
@@ -32,7 +32,7 @@ const product =  {
             {
                 "name":"Toppings",
                 "type":"list",
-                "values":["Lettuce","Tomato","Onion","Pickles","Jalapenos"],
+                "values":["Laitue","Tomate","Onions","Cornichons","Piments"],
                 "mandatory":false,
                 "onlyone":false,
                 "current_value":[]
@@ -40,7 +40,7 @@ const product =  {
             {
                 "name":"Sauces",
                 "type":"list",
-                "values":["Ketchup","Mustard","Mayo","BBQ"],
+                "values":["Ketchup","Burger"],
                 "mandatory":false,
                 "onlyone":false,
                 "current_value":[]
